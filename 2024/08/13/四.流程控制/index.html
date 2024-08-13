@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <meta name="author" content="John Doe">
+  
+  
+  
+  
+  
+    <link rel="alternate" href="/atom.xml " title="Hexo" type="application/atom+xml">
+  
+
+  
+
+  <title>四.流程控制 | Hexo</title>
+
+  
+
+  
+
+  
+
+  <link rel="stylesheet" href="/css/style.css" >
+  <link rel="stylesheet" href="/css/partial/dark.css" >
+
+  
+  
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/partial/highlight/atom-one-light.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/css/iconfont.css">
+    
+  
+
+  
+    <script src="/js/todark.js"></script>
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+</html>
+    
+<div class="nav index" style="height: 60px;">
+    <div class="title animated fadeInDown">
+        <div class="layui-container">
+                <div class="nav-title"><a href="/" title="Hexo">Hexo</a></div>
+            <div class="nav-list">
+                <button> <span class=""></span><span style="display: block;"></span><span class=""></span> </button>
+                <ul class="layui-nav" lay-filter="">
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/ ">
+                            <i class=" fab fa-fort-awesome " style="color: rgb(255 107 107);"></i>
+                            <span class="layui-nav-item-name">Home</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/archives/ ">
+                            <i class=" fas fa-archive " style="color: rgb(10 189 227);"></i>
+                            <span class="layui-nav-item-name">Archives</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/tags/ ">
+                            <i class=" fas fa-hashtag " style="color: rgb(254 202 87);"></i>
+                            <span class="layui-nav-item-name">Tags</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/categories ">
+                            <i class=" far fa-folder-open " style="color: rgb(29 209 161);"></i>
+                            <span class="layui-nav-item-name">Categories</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/about/ ">
+                            <i class=" fab fa-grav " style="color: rgb(154 106 247);"></i>
+                            <span class="layui-nav-item-name">About</span>
+                        </a>
+                    </li>
+                    
+                        
+                        
+                        
+                        
+                    <li class="layui-nav-item">
+                        <a href="/shuoshuo/ ">
+                            <i class=" fas fa-coffee " style="color:#31c7c1;"></i>
+                            <span class="layui-nav-item-name">说说</span>
+                        </a>
+                    </li>
+                    
+                    
+                        <li class="layui-nav-item" id="btn-toggle-dark">🌙</li>
+                    
+                    <span class="layui-nav-bar" style="left: 342px; top: 78px; width: 0px; opacity: 0;"></span>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<header class="header">
+        
+            <div class="logo">
+                    <a href="/"><img src="https://jzys-1314663344.cos.ap-beijing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240806225601.jpg" onerror=this.onerror=null,this.src="/img/loading.gif"></a>
+            </div>
+         
+    </div>
+     
+
+            <div class="motto">
+                <span>人有冲天之志，非运不能自通</span>
+            </div>
+    
+     
+</header>
+
+    
+<article id="post">
+  <div class="post-title">四.流程控制</div>
+  
+<div class="post-meta">
+    
+    
+      <div class="post-meta-item date">
+        <span title="Created 2024.08.13"><i class="far fa-calendar-alt"></i> 2024.08.13</span>
+      </div>
+      <div class="post-meta-item updated">
+        <span title="Updated 2024.08.13"><i class="far fa-calendar-check"></i> 2024.08.13</span>
+      </div>
+     
+     
+    
+     <div class="post-meta-item wordcount">
+        
+          <i class="fas fa-pencil-alt"></i> <span class="post-count">828 words</span>
+           
+        
+          <i class="far fa-clock"></i> <span class="post-count">4 min</span>
+                               
+      </div>
+     
+</div>
+
+
+  
+  <div class="content">
+        <div><h1 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h1><h2 id="Scanner输入"><a href="#Scanner输入" class="headerlink" title="Scanner输入"></a>Scanner输入</h2><ol>
+<li>导包</li>
+<li>创建对象</li>
+<li>调用<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Scanner</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入数字：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> a.nextInt();  </span><br><span class="line">System.out.println(<span class="string">&quot;您输入的数字是：&quot;</span>+i);  </span><br><span class="line">  </span><br><span class="line">System.out.println();  </span><br><span class="line">  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入字符串：&quot;</span>);  </span><br><span class="line"><span class="type">String</span> <span class="variable">n</span> <span class="operator">=</span> a.next();  </span><br><span class="line">System.out.println(<span class="string">&quot;您输入的字符串是：&quot;</span>+n);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<blockquote>
+<p>next（）：遇到空格结束录入<br>nextLine（）：遇到回车结束录入</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//三元加scanner练习：</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入分数:&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">source</span> <span class="operator">=</span> a.nextInt();  </span><br><span class="line"><span class="type">String</span> <span class="variable">aws</span> <span class="operator">=</span> source&lt;<span class="number">60</span>?<span class="string">&quot;不及格&quot;</span>:<span class="string">&quot;及格&quot;</span>;  </span><br><span class="line">System.out.println(aws);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Random"><a href="#Random" class="headerlink" title="Random"></a>Random</h2><ol>
+<li>导包</li>
+<li>创建对象</li>
+<li>调用<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Random</span> <span class="variable">rand</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();  </span><br><span class="line"><span class="type">int</span> <span class="variable">data</span> <span class="operator">=</span> rand.nextInt();  <span class="comment">//随机一个int的数</span></span><br><span class="line">System.out.println(data);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><code>int data = rand.nextInt(10)//在0-9之间随机</code><br><code>int data = rand.nextInt(10)+1//在1-10之间随机</code></p>
+<h2 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h2><blockquote>
+<p>byte,short,int,char,枚举类型，String类型</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">System.out.println(<span class="string">&quot;请输入一个整数：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line"><span class="keyword">switch</span> (n)&#123;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;您输入的是1&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;您输入的是2&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;您输入的是3&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">default</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;您输入的不是1，2，3&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="case的穿透性"><a href="#case的穿透性" class="headerlink" title="case的穿透性"></a>case的穿透性</h3><p>如果没有break则会继续往下穿透执行，知道遇见break或switch结束。<br>举例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">System.out.println(<span class="string">&quot;请输入一个月份：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">mounth</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line"><span class="keyword">switch</span> (mounth) &#123;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">12</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;冬季&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">4</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">5</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;春季&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">6</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">7</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">8</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;夏季&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">9</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">10</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">11</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;秋季&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">default</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;没有这个月份&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//输入一个数判断其是偶数还是奇数</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入一个数字：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> (n%<span class="number">2</span> == <span class="number">1</span>)&#123;  </span><br><span class="line">    System.out.println(<span class="string">&quot;这个数是一个奇数&quot;</span>);  </span><br><span class="line">&#125;<span class="keyword">else</span> &#123;  </span><br><span class="line">    System.out.println(<span class="string">&quot;这个数是一个偶数&quot;</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><blockquote>
+<p>idea快捷键：次数.fori</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;  </span><br><span class="line">    System.out.println(<span class="string">&quot;第&quot;</span>+i+<span class="string">&quot;个语句&quot;</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;  </span><br><span class="line">    <span class="keyword">if</span> (i % <span class="number">2</span> == <span class="number">0</span>)&#123;  </span><br><span class="line">        j++;  </span><br><span class="line">        sum = sum +i;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println(<span class="string">&quot;1-100之间偶数的个数为&quot;</span>+j);  </span><br><span class="line">System.out.println(<span class="string">&quot;1-100之间偶数的和为&quot;</span>+sum);</span><br></pre></td></tr></table></figure>
+
+<h3 id="whlie循环"><a href="#whlie循环" class="headerlink" title="whlie循环"></a>whlie循环</h3><p>叠几次能出来一个珠穆朗玛峰：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="type">int</span> <span class="variable">high</span> <span class="operator">=</span> <span class="number">1</span>;  </span><br><span class="line"><span class="keyword">while</span>(high &lt; <span class="number">88444300</span>)&#123;  </span><br><span class="line">    i++;  </span><br><span class="line">    high = high * <span class="number">2</span>;  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println(<span class="string">&quot;需要折叠的次数为&quot;</span>+i);</span><br></pre></td></tr></table></figure>
+
+<h3 id="do…while循环"><a href="#do…while循环" class="headerlink" title="do…while循环"></a>do…while循环</h3><blockquote>
+<p>至少循环一次，循环一次之后再比较</p>
+</blockquote>
+<h3 id="循环控制关键词"><a href="#循环控制关键词" class="headerlink" title="循环控制关键词"></a>循环控制关键词</h3><h4 id="break"><a href="#break" class="headerlink" title="break"></a>break</h4><ol>
+<li>在switch中代表结束switch语句</li>
+<li>在循环中代表结束循环</li>
+</ol>
+<h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h4><ol>
+<li>结束当前本次循环，直接进入下一次循环，直到条件为false为止</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//猜数字小游戏</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line"><span class="type">Random</span> <span class="variable">rand</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入你要猜的数：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line"><span class="type">int</span> <span class="variable">reasult</span> <span class="operator">=</span> rand.nextInt(<span class="number">100</span>) + <span class="number">1</span>;<span class="comment">//在1-100之间随机一个数  </span></span><br><span class="line"><span class="keyword">while</span>(n!=reasult)&#123;  </span><br><span class="line">    <span class="keyword">if</span>(n &lt; reasult)&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;小了&quot;</span>);  </span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;大了&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">    i++;  </span><br><span class="line">    System.out.print(<span class="string">&quot;请再次输入你第&quot;</span>+i+<span class="string">&quot;次要猜的数：&quot;</span>);  </span><br><span class="line">    n = sc.nextInt();  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println(<span class="string">&quot;恭喜你，答对了！！&quot;</span>);  </span><br><span class="line">System.out.println(<span class="string">&quot;你总共猜了&quot;</span>+i+<span class="string">&quot;次&quot;</span>);</span><br></pre></td></tr></table></figure>
+</div>
+        
+          <div class="post-copyright">
+                  <div class="copyright-item">
+                      <span> Author: John Doe</span>
+                  </div>
+                  <div class="copyright-item">
+                      <span> Link: <a href="http://example.com/2024/08/13/%E5%9B%9B.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/">http://example.com/2024/08/13/%E5%9B%9B.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</a></span>
+                  </div>
+                  <div class="copyright-item">
+                      <span> License: 本博客所有文章除特别声明外，均采用许可协议 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> 转载请注明出处！</span>
+                  </div>
+          </div>
+        
+  </div>
+
+  <div class="share-reward">
+    <div class="share">
+        
+<div class="social-share" data-sites="facebook,twitter,wechat,weibo,qq"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script>
+
+
+      </div>
+        <div class="reward">
+          
+        </div>
+    </div>
+    
+    <div class="post_tags">
+      
+        <i class="fas fa-tag"></i> <a href="/tags/java%E5%AD%A6%E4%B9%A0/" class="tag">java学习</a>
+      
+    </div>
+    <div class="post-nav">
+      
+        <div class="post-nav-prev post-nav-item">
+            <a href="/2024/08/13/%E5%85%AD.%E6%96%B9%E6%B3%95/" >六.方法<i class="fa fa-chevron-left"></i></a>
+        </div>
+      
+      
+        <div class="post-nav-next post-nav-item">
+            <a href="/2024/08/13/%E9%9B%B6.%E9%9B%B6%E6%95%A3/" >0.零散<i class="fa fa-chevron-right"></i></a>
+        </div>
+      
+    </div>
+      
+
+
+
+
+</article>
+
+    
+<a id="gotop" href="javascript:" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    
+
+
+
+
+
+
+    
+<div id="bottom-outer">
+    <div id="bottom-inner">
+        © 2020 <i class="fa fa-heart" id="heart"></i> John Doe 
+        <br>
+        Powered by 
+        <a target="_blank" rel="noopener" href="http://hexo.io">hexo</a> | Theme is <a target="_blank" rel="noopener" href="https://github.com/a2396837/hexo-theme-blank/">blank</a>
+        
+    </div>  
+  </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/layui-src@2.5.5/dist/layui.min.js"></script>
+
+
+
+  
+    <script src="/js/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+  
+
+ 
+
+
+
+  <script>
+    window.lazyLoadOptions = {
+      elements_selector: 'img',
+      threshold: 0
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script>   
+  
+
+
+  <script>
+    var images = $('img').not('.nav-logo img').not('.card img').not($('a>img')).not('.reward-content img')
+    images.each(function (i, o) {
+      var lazyloadSrc = $(o).attr('data-src') ? $(o).attr('data-src') : $(o).attr('src')
+      $(o).wrap(`<a href="${lazyloadSrc}" data-fancybox="group" data-caption="${$(o).attr('alt')}" class="fancybox"></a>`)
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script>
+  <script>
+        $().fancybox({
+      selector: '[data-fancybox]',
+      loop: true,
+      transitionEffect: 'slide',
+      protect: true,
+      buttons: ['slideShow', 'fullScreen', 'thumbs', 'close']
+    })
+  </script>   
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/gh/a2396837/CDN@latest/js/firework.js"></script>
+  
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js"></script>
+<script>
+!function (e, t, a) {
+  var initCopyCode = function(){
+    var copyHtml = '';
+    copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+    copyHtml += '  <i class="fa fa-clipboard"></i><span>复制</span>';
+    copyHtml += '</button>';
+    $(".highlight .code pre").before(copyHtml);
+    new ClipboardJS('.btn-copy', {
+      target: function(trigger) {
+        return trigger.nextElementSibling;
+      }
+    });
+  }
+  initCopyCode();
+}(window, document);
+</script>  
+  
+
+<script>
+  var btntop = $('#gotop');
+  btntop.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
+
+  var $table = $('.content table').not($('figure.highlight > table'))
+$table.each(function () {
+  $(this).wrap('<div class="table-wrap"></div>')
+})
+</script>
+
+
+
+</html>
