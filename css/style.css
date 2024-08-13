@@ -15,7 +15,7 @@ body {
   min-height: 100%;
   background: var(--bg);
   font-size: 16px;
-  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: ;
   -webkit-tap-highlight-color: transparent;
 }
 ::selection {
@@ -264,7 +264,7 @@ li {
 .header .title,
 .header .logo {
   text-align: center;
-  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: ;
   text-decoration: none;
   font-size: 5rem;
   font-weight: bold;
@@ -283,8 +283,8 @@ li {
 .motto {
   text-align: center;
   margin: 0.5em;
-  font-size: 1.25em;
-  color: #84ccc9;
+  font-size: ;
+  color: ;
 }
 .social {
   text-align: center;
@@ -375,7 +375,7 @@ li {
   transition: all 400ms ease-out;
 }
 .nav .layui-container .nav-title {
-  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: ;
   padding: 0.5em;
   font-weight: 700;
   font-size: 1.5em;
@@ -872,7 +872,7 @@ code {
   width: 100%;
   margin: 0.5rem 0;
   display: block;
-  background-color: #fafafa;
+  background-color: ;
   font-size: 0.9rem;
   border-radius: 4px;
   line-height: 1.5;
@@ -914,7 +914,7 @@ table {
   overflow: auto;
   font-size: 0.9rem;
   font-family: Consolas, "Panic Sans", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Menlo, "Microsoft Yahei" !important;
-  border: 1px solid #f2f2f2;
+  border: 1px solid;
   padding: 16px;
   border-radius: 4px;
 }
@@ -932,7 +932,7 @@ table {
   position: sticky;
   left: 0;
   z-index: 1;
-  background-color: #f2f2f2;
+  background-color: ;
 }
 .btn-copy {
   z-index: 1;
