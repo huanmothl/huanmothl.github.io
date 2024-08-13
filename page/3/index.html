@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 7.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>Hexo</title>
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/page/3/index.html">
@@ -27,1163 +25,605 @@
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/page/3/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
-
-  <title>Hexo</title>
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://example.com/page/3/index.html">
   
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
       
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9711.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/final%E4%BF%AE%E9%A5%B0%E7%AC%A6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9711.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/final%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:19" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:19+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-07-24 10:19:29" itemprop="dateModified" datetime="2024-07-24T10:19:29+08:00">2024-07-24</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
-          <h1 id="final修饰符"><a href="#final修饰符" class="headerlink" title="final修饰符"></a>final修饰符</h1><h3 id="1-格式："><a href="#1-格式：" class="headerlink" title="1.格式："></a>1.格式：</h3><pre><code>public final class 类名&#123;&#125;
-</code></pre>
-<h3 id="2-特点："><a href="#2-特点：" class="headerlink" title="2.特点："></a>2.特点：</h3><pre><code>被final修饰的类不能被继承
-</code></pre>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;  </span><br><span class="line">      </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Zi</span> <span class="keyword">extends</span> <span class="title class_">MyClass</span>&#123;  <span class="comment">//这个是报错，不被允许的</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="修饰方法"><a href="#修饰方法" class="headerlink" title="修饰方法"></a>修饰方法</h2><h3 id="1-格式：-1"><a href="#1-格式：-1" class="headerlink" title="1.格式："></a>1.格式：</h3><p>修饰符 final 返回值类型 方法名（形参）{<br>    方法体<br>    return 结果<br>}</p>
-<h3 id="2-特点：-1"><a href="#2-特点：-1" class="headerlink" title="2.特点："></a>2.特点：</h3><p><strong>被final修饰的方法，不能被重写</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title function_">eat</span> <span class="params">()</span>&#123;  </span><br><span class="line">          </span><br><span class="line">    &#125;;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Zi</span> <span class="keyword">extends</span> <span class="title class_">MyClass</span>&#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>&#123;  <span class="comment">//这样写就会报错，final修饰的方法不能被重写</span></span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>final和abstract不能同时使用</strong><br><strong>被final修饰的成员变量不能被二次赋值</strong><br>使用final修饰对象：<br>1.对象中的成员变量可以改变<br>2.对象的地址值不能改变，即<code>p1 =  new Person(&quot;大炮&quot;,18)</code>这一语句报错<br>![[Pasted image 20240724100243.png]]</p>
-<h2 id="final修饰成员变量"><a href="#final修饰成员变量" class="headerlink" title="final修饰成员变量"></a>final修饰成员变量</h2><h3 id="1-格式：-2"><a href="#1-格式：-2" class="headerlink" title="1.格式："></a>1.格式：</h3><p>final  数据类型  变量名 &#x3D; 值</p>
-<h3 id="2-特点：-2"><a href="#2-特点：-2" class="headerlink" title="2.特点："></a>2.特点：</h3><p>a.需要手动赋值<br><code>final int qwe;</code>这样会报错<br>b.不能二次赋值</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;  </span><br><span class="line">    <span class="keyword">final</span> <span class="type">int</span> <span class="variable">qwe</span> <span class="operator">=</span> <span class="number">5</span>;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyClass</span><span class="params">(<span class="type">int</span> qwe)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.qwe = qwe;  <span class="comment">//报错,不能二次赋值</span></span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setQwe</span><span class="params">(<span class="type">int</span> qwe)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.qwe = qwe;  <span class="comment">//报错,不能二次赋值</span></span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getQwe</span><span class="params">()</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> qwe;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8B/%E5%91%BD%E4%BB%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8B/%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:19" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:19+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-07-28 09:39:16" itemprop="dateModified" datetime="2024-07-28T09:39:16+08:00">2024-07-28</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="1-endsWith（）"><a href="#1-endsWith（）" class="headerlink" title="1.endsWith（）"></a>1.endsWith（）</h3><p>判断s1是不是以 “.txt”结尾</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(!s1.endsWith(<span class="string">&quot;.txt&quot;</span>))&#123;  </span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">FileNotFoundException</span>(<span class="string">&quot;文件找不到&quot;</span>);  </span><br><span class="line">    <span class="comment">//故意创建异常  </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2-e-printStackTrace"><a href="#2-e-printStackTrace" class="headerlink" title="2.e.printStackTrace()"></a>2.e.printStackTrace()</h3><p>将详细的错误信息打印到控制台上</p>
-<h3 id="2-equals"><a href="#2-equals" class="headerlink" title="2.equals"></a>2.equals</h3><p>判断字符串内容是否一致<br><code>username.equals(username1)</code><br>使用equals语句</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8B/10.%E7%BB%A7%E6%89%BF%E5%92%8C%E6%8A%BD%E8%B1%A1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8B/10.%E7%BB%A7%E6%89%BF%E5%92%8C%E6%8A%BD%E8%B1%A1/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:19" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:19+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-11 20:39:55" itemprop="dateModified" datetime="2024-08-11T20:39:55+08:00">2024-08-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>1.子类可以继承父类中私有和非私有成员，但是不能使用父类中的私有成员<br>2.构造方法不能继承<br><strong>静态方法可以被继承使用但是不能被重写</strong><br>![[Pasted image 20240720184811.png]]</p>
-<h2 id="继承的用法"><a href="#继承的用法" class="headerlink" title="继承的用法"></a>继承的用法</h2><p>在子类中添加extends修饰即为继承</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Employee类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Employee</span> &#123;  </span><br><span class="line">    String name;  </span><br><span class="line">    <span class="type">int</span> age;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">work</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;工作&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span> &#123; <span class="comment">//这个方法无法被子类调用，因为这是一个私有的成员方法  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;吃饭&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Teacher</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Teacher</span> <span class="keyword">extends</span> <span class="title class_">Employee</span> &#123;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Manager</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Manager</span> <span class="keyword">extends</span> <span class="title class_">Employee</span>&#123;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">Teacher</span> <span class="variable">teacher</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Teacher</span>();  </span><br><span class="line">    teacher.name = <span class="string">&quot;tplk&quot;</span>;  </span><br><span class="line">    teacher.age = <span class="number">18</span>;  </span><br><span class="line">    System.out.println(teacher.name+<span class="string">&quot;---&quot;</span>+teacher.age);  </span><br><span class="line">    teacher.work();  </span><br><span class="line">  </span><br><span class="line">    <span class="type">Manager</span> <span class="variable">manager</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Manager</span>();  </span><br><span class="line">    manager.name = <span class="string">&quot;qwer&quot;</span>;  </span><br><span class="line">    manager.age = <span class="number">20</span>;  </span><br><span class="line">    System.out.println(manager.name+<span class="string">&quot;---&quot;</span>+manager.age);  </span><br><span class="line">    manager.work();  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="成员变量和成员方法的访问特点"><a href="#成员变量和成员方法的访问特点" class="headerlink" title="成员变量和成员方法的访问特点"></a>成员变量和成员方法的访问特点</h2><p>父类不能使用子类自己的成员（即父类没有子类有的成员）<br>子类可以使用父类自己的成员</p>
-<p>&#x3D;&#x3D;<strong>等号左边是谁，先调用谁中的成员变量，子类没有，找父类</strong>&#x3D;&#x3D;</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Employee</span> <span class="variable">emp</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Teacher</span>() <span class="comment">//可能会出现这种情况，这个是多态</span></span><br><span class="line">System.out.println(teacher.num1);</span><br><span class="line"><span class="comment">//比如这个就是Employee的变量，Teacher的方法</span></span><br></pre></td></tr></table></figure>
-<p>&#x3D;&#x3D;<strong>等号右边是谁，先调用谁中的成员方法，子类没有，找父类</strong>&#x3D;&#x3D;</p>
-<blockquote>
-<p><strong>成员变量看左边，成员方法看右边</strong></p>
-</blockquote>
-<h2 id="方法的重写"><a href="#方法的重写" class="headerlink" title="方法的重写"></a>方法的重写</h2><p>![[Pasted image 20240720195310.png]]<br>就是在子类里面写一个和父类相同名称和参数列表的方法</p>
-<p>子类中重写的方法的权限必须大于等于父类中的被重写的方法的权限<br>权限大小排序：<br>public &gt; protected &gt; 默认 &gt; private<br>私有方法，构造方法，静态方法不能被重写</p>
-<p>&#x3D;&#x3D;！！注意&#x3D;&#x3D;<br>子类中如果要重写父类中的一个返回值为对象的方法，<br>那么子类中的返回值的对象一定要是父类中的子类，<br>比如<br>当Employee中返回Employee对象时，Teacher可以返回Employee对象或Teacher对象<br>当Employee中返回Teacher对象时，Teacher只能返回Teacher对象</p>
-<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>在进行某一个方法的重启和改造时<br>直接进行继承，只把升级改造的方法进行重写即可</p>
-<h2 id="super和this"><a href="#super和this" class="headerlink" title="super和this"></a>super和this</h2><h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><p>![[Pasted image 20240720202237.png]]</p>
-<h3 id="super"><a href="#super" class="headerlink" title="super"></a>super</h3><p>在子类中写<br>![[Pasted image 20240720202502.png]]</p>
-<p>![[Pasted image 20240720210846.png|415]]<br>![[Pasted image 20240720210526.png]]<br>![[Pasted image 20240720210803.png]]<br>![[Pasted image 20240720212613.png]]</p>
-<h3 id="this"><a href="#this" class="headerlink" title="this"></a>this</h3><p>![[Pasted image 20240721113557.png]]<br>通过this和super调用构造方法时必须在第一行而且两者不能同时出现<br>![[Pasted image 20240721113210.png]]</p>
-<h2 id="为父类私有属性赋值"><a href="#为父类私有属性赋值" class="headerlink" title="为父类私有属性赋值"></a>为父类私有属性赋值</h2><p>当父类的成员变量都是私有的时：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Employee</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span>  <span class="type">int</span> num;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Employee</span><span class="params">()</span> &#123;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Employee</span><span class="params">(<span class="type">int</span> num)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.num = num;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getNum</span><span class="params">()</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> num;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setNum</span><span class="params">(<span class="type">int</span> num)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.num = num;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>想要修改私有成员变量时，分为以下两种情况：</p>
-<h3 id="1-初始化时–直接写一个新的构造方法"><a href="#1-初始化时–直接写一个新的构造方法" class="headerlink" title="1.初始化时–直接写一个新的构造方法"></a>1.初始化时–直接写一个新的构造方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="title function_">Teacher</span><span class="params">(<span class="type">int</span> num)</span>&#123;  </span><br><span class="line">    <span class="built_in">super</span>(num);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这个是直接通过super调用父类的构造方法</p>
-<h3 id="2-初始化之后后期需要修改的时候"><a href="#2-初始化之后后期需要修改的时候" class="headerlink" title="2.初始化之后后期需要修改的时候"></a>2.初始化之后后期需要修改的时候</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setNum</span><span class="params">(<span class="type">int</span> num)</span>&#123;  </span><br><span class="line">    <span class="built_in">super</span>.setNum(num);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>通过super调用父类的setNum方法</p>
-<h2 id="抽象"><a href="#抽象" class="headerlink" title="抽象"></a>抽象</h2><p>可以把它看作成为一个标准，所有他子类都必须要有这些功能，故此需要在子类中重写<br><strong>抽象方法所在的类一定是抽象类</strong><br><strong>而抽象类不能够使用new方法，要想new只能new他的非抽象子类</strong><br>包含抽象方法和抽象类<br>![[Pasted image 20240721123038.png]]</p>
-<h3 id="抽象的注意事项"><a href="#抽象的注意事项" class="headerlink" title="抽象的注意事项"></a>抽象的注意事项</h3><p>![[Pasted image 20240721124229.png]]</p>
-<h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><p>![[Pasted image 20240722091312.png]]</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">USB</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">open</span><span class="params">()</span>;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">close</span><span class="params">()</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">mouse</span> <span class="keyword">implements</span> <span class="title class_">USB</span>&#123;  </span><br><span class="line">    <span class="meta">@Override</span>  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">open</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;鼠标打开&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="meta">@Override</span>  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">close</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;鼠标关闭&quot;</span>);  </span><br><span class="line">  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">mouse</span> <span class="variable">m</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">mouse</span>();  </span><br><span class="line">    m.close();  </span><br><span class="line">    m.open();  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">USB</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">default</span> <span class="keyword">void</span> <span class="title function_">methodef</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;我是默认方法&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">methodsta</span><span class="params">()</span>&#123;  </span><br><span class="line">	    System.out.println(<span class="string">&quot;我是接口中的静态方法&quot;</span>);  </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//静态方法可以使test直接调用接口中的静态方法，从而快速实现功能</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">mouse</span> <span class="keyword">implements</span> <span class="title class_">USB</span>&#123;  </span><br><span class="line">    <span class="keyword">public</span>  <span class="keyword">void</span> <span class="title function_">methodef</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;我是重写默认方法&quot;</span>);  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">        <span class="type">mouse</span> <span class="variable">m</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">mouse</span>();  </span><br><span class="line">        m.methodef(); <span class="comment">//静态方法可以使test直接调用接口中的静态方法，从而快速实现功能</span></span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="成员变量"><a href="#成员变量" class="headerlink" title="成员变量"></a>成员变量</h3><p>![[Pasted image 20240722104343.png]]</p>
-<h2 id="接口的特点"><a href="#接口的特点" class="headerlink" title="接口的特点"></a>接口的特点</h2><p>![[Pasted image 20240722110535.png|615]]<br>![[Pasted image 20240722110434.png|435]]</p>
-<h1 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h1><p>主要操作重写方法</p>
-<h2 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Animal</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Cat</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;  </span><br><span class="line">    <span class="meta">@Override</span>  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;猫要吃饭&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sleep</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;猫要睡觉&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span>&#123;  </span><br><span class="line">    <span class="meta">@Override</span>  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;狗要吃饭&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sleep</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;狗要睡觉&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">Dog</span> <span class="variable">d</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();  </span><br><span class="line">    d.eat();<span class="comment">//重写方法  </span></span><br><span class="line">    d.sleep();<span class="comment">//特有方法  </span></span><br><span class="line">  </span><br><span class="line">    <span class="type">Cat</span> <span class="variable">c</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Cat</span>();  </span><br><span class="line">    c.eat();<span class="comment">//重写方法  </span></span><br><span class="line">    c.sleep();<span class="comment">//特有方法  </span></span><br><span class="line">  </span><br><span class="line">    System.out.println(<span class="string">&quot;-----------------------&quot;</span>);  </span><br><span class="line">    <span class="comment">//多态new对象  </span></span><br><span class="line">    <span class="type">Animal</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();<span class="comment">//相当于double b = 10;  </span></span><br><span class="line">    a.eat();<span class="comment">//重写的  </span></span><br><span class="line">    <span class="comment">//a.sleep();这个不行，多态下不能直接调用子类特有成员  </span></span><br><span class="line">  </span><br><span class="line">    <span class="type">Animal</span> <span class="variable">b</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Cat</span>();<span class="comment">//相当于double b = 10;  </span></span><br><span class="line">    b.eat();<span class="comment">//重写的  </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="成员方法"><a href="#成员方法" class="headerlink" title="成员方法"></a>成员方法</h3><h3 id="成员变量-1"><a href="#成员变量-1" class="headerlink" title="成员变量"></a>成员变量</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Animal</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();<span class="comment">//相当于double b = 10;  </span></span><br><span class="line">a.eat();<span class="comment">//重写的</span></span><br></pre></td></tr></table></figure>
-<p>变量看右边，方法看左边</p>
-<h2 id="多态的好处"><a href="#多态的好处" class="headerlink" title="多态的好处"></a>多态的好处</h2><p>父类引用指向子类对象</p>
-<p>![[Pasted image 20240722185230.png]]<br>在使用方法的时候不需要因为参数的不同定义多个相同的方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Animal</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Cat</span> <span class="keyword">extends</span> <span class="title class_">Animal</span> &#123;  </span><br><span class="line">  </span><br><span class="line">    <span class="meta">@Override</span>  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;猫要吃饭&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sleep</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;猫要睡觉&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span>&#123;  </span><br><span class="line">    <span class="meta">@Override</span>  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;狗要吃饭&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sleep</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;狗要睡觉&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">Dog</span> <span class="variable">d</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();  </span><br><span class="line">    d.eat();<span class="comment">//重写方法  </span></span><br><span class="line">    d.sleep();<span class="comment">//特有方法  </span></span><br><span class="line">  </span><br><span class="line">    <span class="type">Cat</span> <span class="variable">c</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Cat</span>();  </span><br><span class="line">    c.eat();<span class="comment">//重写方法  </span></span><br><span class="line">    c.sleep();<span class="comment">//特有方法  </span></span><br><span class="line">  </span><br><span class="line">    System.out.println(<span class="string">&quot;-----------------------&quot;</span>);  </span><br><span class="line">    <span class="comment">//多态new对象  </span></span><br><span class="line">    <span class="type">Animal</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();<span class="comment">//相当于double b = 10;  </span></span><br><span class="line">    a.eat();<span class="comment">//重写的  </span></span><br><span class="line">    method(a);  </span><br><span class="line">    <span class="comment">//a.sleep();这个不行，多态下不能直接调用子类特有成员  </span></span><br><span class="line">  </span><br><span class="line">    <span class="type">Animal</span> <span class="variable">b</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Cat</span>();<span class="comment">//相当于double b = 10;  </span></span><br><span class="line">    b.eat();<span class="comment">//重写的  </span></span><br><span class="line">    method(b);  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">(Animal animal)</span> &#123;  </span><br><span class="line">    <span class="comment">//即Animal animal = a;Animal animal = b  </span></span><br><span class="line">    <span class="comment">//如果用多态定义了a和b那么就可以使用参数类型为animal的该方法  </span></span><br><span class="line">    animal.eat();  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="多态中的转型"><a href="#多态中的转型" class="headerlink" title="多态中的转型"></a>多态中的转型</h2><h3 id="向上转型"><a href="#向上转型" class="headerlink" title="向上转型"></a>向上转型</h3><p>父类引用指向子类对象<br>好比是：<code>double b = 1;</code></p>
-<h3 id="向下转型"><a href="#向下转型" class="headerlink" title="向下转型"></a>向下转型</h3><p>类似于强转，将大类型转成小类型<br>表现方式：<br>Animail cat1 &#x3D; new Cat() -&gt;向上转型 -&gt;double b &#x3D; 1;<br>Animail cat2 &#x3D; (Cat)animail -&gt;向下转型-&gt;int i &#x3D; (int)b;</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">Animal</span> <span class="variable">cat1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Cat</span>();  </span><br><span class="line">  </span><br><span class="line">    <span class="type">Cat</span> <span class="variable">cat2</span> <span class="operator">=</span> (Cat)cat1;  </span><br><span class="line">  </span><br><span class="line">    <span class="comment">//cat1.sleep();这个调用不了，因为方法调用要看左边，  </span></span><br><span class="line">    cat2.sleep();<span class="comment">//这个能调用，因为做了向下转型  </span></span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123; </span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		System.out.println(&quot;你好&quot;); </span><br><span class="line">	&#125; </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-<h2 id="转型可能会出现的问题"><a href="#转型可能会出现的问题" class="headerlink" title="转型可能会出现的问题"></a>转型可能会出现的问题</h2><p>1.左右两边类型不一致，会出现类型转换异常错误（ClassCastException）。<br>解决：在向下转型之前，先判断类型：<br>    使用instanceof关键词进行判断</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">Animal</span> <span class="variable">dog</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Dog</span>();  </span><br><span class="line">    method(dog);  </span><br><span class="line">    <span class="type">Animal</span> <span class="variable">cat</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Cat</span>();  </span><br><span class="line">    method(cat);  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">method</span><span class="params">(Animal a)</span> &#123;  </span><br><span class="line">    <span class="keyword">if</span> (a <span class="keyword">instanceof</span> Dog) &#123;  </span><br><span class="line">	    <span class="type">Dog</span> <span class="variable">d</span> <span class="operator">=</span> (Dog) a;  </span><br><span class="line">	    d.eat();  </span><br><span class="line">	    d.sleep();  </span><br><span class="line">	&#125;  </span><br><span class="line">	<span class="keyword">if</span> (a <span class="keyword">instanceof</span> Cat) &#123;  </span><br><span class="line">	    <span class="type">Cat</span> <span class="variable">c</span> <span class="operator">=</span> (Cat) a;  </span><br><span class="line">	    c.eat();  </span><br><span class="line">	    c.sleep();  </span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>2.案例<br>![[Pasted image 20240724090149.png]]<br>![[Pasted image 20240724090218.png]]</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Computer</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">start</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;Computer is running&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">useUsb</span><span class="params">(USB usb)</span>&#123;<span class="comment">//多态 USB usb = mouse        usb.start();  </span></span><br><span class="line">        usb.close();  </span><br><span class="line">        <span class="keyword">if</span> (usb <span class="keyword">instanceof</span> Mouse)&#123;  </span><br><span class="line">            ((Mouse) usb).click();<span class="comment">//强转  </span></span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span> (usb <span class="keyword">instanceof</span> Keyboard)&#123;  </span><br><span class="line">            ((Keyboard)usb).qiaoji();<span class="comment">//强转  </span></span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">stop</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;Computer is stopped&quot;</span>);  </span><br><span class="line">    &#125;;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">USB</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span>  <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">start</span><span class="params">()</span>;  </span><br><span class="line">    <span class="keyword">public</span>  <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">close</span><span class="params">()</span>;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span>  <span class="keyword">class</span> <span class="title class_">Mouse</span> <span class="keyword">implements</span> <span class="title class_">USB</span>&#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">start</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;鼠标开启&quot;</span>);  </span><br><span class="line">  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">close</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;鼠标关闭&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">click</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;鼠标点击&quot;</span>);  </span><br><span class="line">    &#125;;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Keyboard</span> <span class="keyword">implements</span> <span class="title class_">USB</span>&#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">start</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;键盘开启&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">close</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;键盘关闭&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">qiaoji</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;键盘敲击&quot;</span>);  </span><br><span class="line">    &#125;;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">        <span class="type">Mouse</span> <span class="variable">mouse</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Mouse</span>();  </span><br><span class="line">        <span class="type">Keyboard</span> <span class="variable">keyboard</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Keyboard</span>();  </span><br><span class="line">        <span class="type">Computer</span> <span class="variable">computer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Computer</span>();  </span><br><span class="line">  </span><br><span class="line">        computer.start();  </span><br><span class="line">  </span><br><span class="line">        computer.useUsb(mouse);  </span><br><span class="line">        computer.useUsb(keyboard);  </span><br><span class="line">        computer.stop();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E9%9B%B6.%E9%9B%B6%E6%95%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E9%9B%B6.%E9%9B%B6%E6%95%A3/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-07-28 09:18:00" itemprop="dateModified" datetime="2024-07-28T09:18:00+08:00">2024-07-28</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="win基础命令"><a href="#win基础命令" class="headerlink" title="win基础命令"></a>win基础命令</h2><table>
-<thead>
-<tr>
-<th>命令</th>
-<th>操作</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>dir</td>
-<td>查看当前路径下的文件或文件夹</td>
-</tr>
-<tr>
-<td>mkdir</td>
-<td>创建文件夹</td>
-</tr>
-<tr>
-<td>rd</td>
-<td>删除文件夹（空）</td>
-</tr>
-<tr>
-<td>del</td>
-<td>删除文件</td>
-</tr>
-</tbody></table>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E6%9D%82%E7%A2%8E%E7%9F%A5%E8%AF%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E6%9D%82%E7%A2%8E%E7%9F%A5%E8%AF%86/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-07-07 23:25:15" itemprop="dateModified" datetime="2024-07-07T23:25:15+08:00">2024-07-07</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E5%9B%9B.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E5%9B%9B.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-11 14:36:42" itemprop="dateModified" datetime="2024-08-11T14:36:42+08:00">2024-08-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h1><h2 id="Scanner输入"><a href="#Scanner输入" class="headerlink" title="Scanner输入"></a>Scanner输入</h2><ol>
-<li>导包</li>
-<li>创建对象</li>
-<li>调用<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Scanner</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入数字：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> a.nextInt();  </span><br><span class="line">System.out.println(<span class="string">&quot;您输入的数字是：&quot;</span>+i);  </span><br><span class="line">  </span><br><span class="line">System.out.println();  </span><br><span class="line">  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入字符串：&quot;</span>);  </span><br><span class="line"><span class="type">String</span> <span class="variable">n</span> <span class="operator">=</span> a.next();  </span><br><span class="line">System.out.println(<span class="string">&quot;您输入的字符串是：&quot;</span>+n);</span><br></pre></td></tr></table></figure></li>
-</ol>
-<blockquote>
-<p>next（）：遇到空格结束录入<br>nextLine（）：遇到回车结束录入</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//三元加scanner练习：</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入分数:&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">source</span> <span class="operator">=</span> a.nextInt();  </span><br><span class="line"><span class="type">String</span> <span class="variable">aws</span> <span class="operator">=</span> source&lt;<span class="number">60</span>?<span class="string">&quot;不及格&quot;</span>:<span class="string">&quot;及格&quot;</span>;  </span><br><span class="line">System.out.println(aws);</span><br></pre></td></tr></table></figure>
-
-<h2 id="Random"><a href="#Random" class="headerlink" title="Random"></a>Random</h2><ol>
-<li>导包</li>
-<li>创建对象</li>
-<li>调用<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Random</span> <span class="variable">rand</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();  </span><br><span class="line"><span class="type">int</span> <span class="variable">data</span> <span class="operator">=</span> rand.nextInt();  <span class="comment">//随机一个int的数</span></span><br><span class="line">System.out.println(data);</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p><code>int data = rand.nextInt(10)//在0-9之间随机</code><br><code>int data = rand.nextInt(10)+1//在1-10之间随机</code></p>
-<h2 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h2><blockquote>
-<p>byte,short,int,char,枚举类型，String类型</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">System.out.println(<span class="string">&quot;请输入一个整数：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line"><span class="keyword">switch</span> (n)&#123;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;您输入的是1&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;您输入的是2&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;您输入的是3&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">default</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;您输入的不是1，2，3&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="case的穿透性"><a href="#case的穿透性" class="headerlink" title="case的穿透性"></a>case的穿透性</h3><p>如果没有break则会继续往下穿透执行，知道遇见break或switch结束。<br>举例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">System.out.println(<span class="string">&quot;请输入一个月份：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">mounth</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line"><span class="keyword">switch</span> (mounth) &#123;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">12</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;冬季&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">4</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">5</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;春季&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">6</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">7</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">8</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;夏季&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">9</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">10</span>:  </span><br><span class="line">    <span class="keyword">case</span> <span class="number">11</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;秋季&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">    <span class="keyword">default</span>:  </span><br><span class="line">        System.out.println(<span class="string">&quot;没有这个月份&quot;</span>);  </span><br><span class="line">        <span class="keyword">break</span>;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//输入一个数判断其是偶数还是奇数</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入一个数字：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> (n%<span class="number">2</span> == <span class="number">1</span>)&#123;  </span><br><span class="line">    System.out.println(<span class="string">&quot;这个数是一个奇数&quot;</span>);  </span><br><span class="line">&#125;<span class="keyword">else</span> &#123;  </span><br><span class="line">    System.out.println(<span class="string">&quot;这个数是一个偶数&quot;</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><blockquote>
-<p>idea快捷键：次数.fori</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;  </span><br><span class="line">    System.out.println(<span class="string">&quot;第&quot;</span>+i+<span class="string">&quot;个语句&quot;</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;  </span><br><span class="line">    <span class="keyword">if</span> (i % <span class="number">2</span> == <span class="number">0</span>)&#123;  </span><br><span class="line">        j++;  </span><br><span class="line">        sum = sum +i;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println(<span class="string">&quot;1-100之间偶数的个数为&quot;</span>+j);  </span><br><span class="line">System.out.println(<span class="string">&quot;1-100之间偶数的和为&quot;</span>+sum);</span><br></pre></td></tr></table></figure>
-
-<h3 id="whlie循环"><a href="#whlie循环" class="headerlink" title="whlie循环"></a>whlie循环</h3><p>叠几次能出来一个珠穆朗玛峰：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="type">int</span> <span class="variable">high</span> <span class="operator">=</span> <span class="number">1</span>;  </span><br><span class="line"><span class="keyword">while</span>(high &lt; <span class="number">88444300</span>)&#123;  </span><br><span class="line">    i++;  </span><br><span class="line">    high = high * <span class="number">2</span>;  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println(<span class="string">&quot;需要折叠的次数为&quot;</span>+i);</span><br></pre></td></tr></table></figure>
-
-<h3 id="do…while循环"><a href="#do…while循环" class="headerlink" title="do…while循环"></a>do…while循环</h3><blockquote>
-<p>至少循环一次，循环一次之后再比较</p>
-</blockquote>
-<h3 id="循环控制关键词"><a href="#循环控制关键词" class="headerlink" title="循环控制关键词"></a>循环控制关键词</h3><h4 id="break"><a href="#break" class="headerlink" title="break"></a>break</h4><ol>
-<li>在switch中代表结束switch语句</li>
-<li>在循环中代表结束循环</li>
-</ol>
-<h4 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h4><ol>
-<li>结束当前本次循环，直接进入下一次循环，直到条件为false为止</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//猜数字小游戏</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line"><span class="type">Random</span> <span class="variable">rand</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入你要猜的数：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line"><span class="type">int</span> <span class="variable">reasult</span> <span class="operator">=</span> rand.nextInt(<span class="number">100</span>) + <span class="number">1</span>;<span class="comment">//在1-100之间随机一个数  </span></span><br><span class="line"><span class="keyword">while</span>(n!=reasult)&#123;  </span><br><span class="line">    <span class="keyword">if</span>(n &lt; reasult)&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;小了&quot;</span>);  </span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;大了&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">    i++;  </span><br><span class="line">    System.out.print(<span class="string">&quot;请再次输入你第&quot;</span>+i+<span class="string">&quot;次要猜的数：&quot;</span>);  </span><br><span class="line">    n = sc.nextInt();  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println(<span class="string">&quot;恭喜你，答对了！！&quot;</span>);  </span><br><span class="line">System.out.println(<span class="string">&quot;你总共猜了&quot;</span>+i+<span class="string">&quot;次&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E5%85%AD.%E6%96%B9%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E5%85%AD.%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-11 14:52:32" itemprop="dateModified" datetime="2024-08-11T14:52:32+08:00">2024-08-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="方法的使用"><a href="#方法的使用" class="headerlink" title="方法的使用"></a>方法的使用</h1><h2 id="1-无参无返回值"><a href="#1-无参无返回值" class="headerlink" title="1.无参无返回值"></a>1.无参无返回值</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 名称()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    farmer();  </span><br><span class="line">    cook();  </span><br><span class="line">    me();  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">farmer</span><span class="params">()</span> &#123;  </span><br><span class="line">    System.out.println(<span class="string">&quot;farmer&quot;</span>);  </span><br><span class="line">    System.out.println(<span class="string">&quot;farmer&quot;</span>);  </span><br><span class="line">    System.out.println(<span class="string">&quot;farmer&quot;</span>);  </span><br><span class="line">    System.out.println(<span class="string">&quot;farmer&quot;</span>);  </span><br><span class="line">    System.out.println(<span class="string">&quot;farmer&quot;</span>);  </span><br><span class="line">    System.out.println(<span class="string">&quot;farmer&quot;</span>);  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">cook</span><span class="params">()</span> &#123;  </span><br><span class="line">    System.out.println(<span class="string">&quot;cook&quot;</span>);  </span><br><span class="line">    System.out.println(<span class="string">&quot;cook&quot;</span>);  </span><br><span class="line">    System.out.println(<span class="string">&quot;cook&quot;</span>);  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">me</span><span class="params">()</span> &#123;  </span><br><span class="line">    System.out.println(<span class="string">&quot;me&quot;</span>);  </span><br><span class="line">    System.out.println(<span class="string">&quot;me&quot;</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="2-有参无返回值"><a href="#2-有参无返回值" class="headerlink" title="2.有参无返回值"></a>2.有参无返回值</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 名称(<span class="type">int</span> a)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">    System.out.println(<span class="string">&quot;请输入a：&quot;</span>);  </span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line">    System.out.println(<span class="string">&quot;请输入b：&quot;</span>);  </span><br><span class="line">    <span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line">  </span><br><span class="line">    sum(a,b);  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">sum</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span>&#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> a+b;  </span><br><span class="line">    System.out.println(<span class="string">&quot;a+b=&quot;</span>+sum);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-无参有返回值"><a href="#3-无参有返回值" class="headerlink" title="3.无参有返回值"></a>3.无参有返回值</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> sum();  </span><br><span class="line">    System.out.println(<span class="string">&quot;a+b=&quot;</span>+sum);  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">sum</span><span class="params">()</span>&#123;  </span><br><span class="line">    <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">    System.out.println(<span class="string">&quot;请输入a：&quot;</span>);  </span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line">    System.out.println(<span class="string">&quot;请输入b：&quot;</span>);  </span><br><span class="line">    <span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line">    <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> a + b;  </span><br><span class="line">    <span class="keyword">return</span> sum;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="4-有参有返回值"><a href="#4-有参有返回值" class="headerlink" title="4.有参有返回值"></a>4.有参有返回值</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">    System.out.println(<span class="string">&quot;请输入a：&quot;</span>);  </span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line">    System.out.println(<span class="string">&quot;请输入b：&quot;</span>);  </span><br><span class="line">    <span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line">    <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> sum(a,b);  </span><br><span class="line">    System.out.println(<span class="string">&quot;a+b=&quot;</span>+sum);  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">sum</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span>&#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> a + b;  </span><br><span class="line">    <span class="keyword">return</span> sum;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="参数和返回值使用时机"><a href="#参数和返回值使用时机" class="headerlink" title="参数和返回值使用时机"></a>参数和返回值使用时机</h1><p>![[Pasted image 20240713221940.png]]</p>
-<h1 id="方法练习："><a href="#方法练习：" class="headerlink" title="方法练习："></a>方法练习：</h1><h2 id="1-键盘录入一个数在方法中判断奇偶性并输出"><a href="#1-键盘录入一个数在方法中判断奇偶性并输出" class="headerlink" title="1.键盘录入一个数在方法中判断奇偶性并输出"></a>1.键盘录入一个数在方法中判断奇偶性并输出</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">    System.out.print(<span class="string">&quot;请输入一个整数：&quot;</span>);  </span><br><span class="line">    <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();    </span><br><span class="line">    panduan(n);    </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">panduan</span><span class="params">(<span class="type">int</span> a)</span> &#123;  </span><br><span class="line">    <span class="keyword">if</span> (a % <span class="number">2</span> == <span class="number">0</span>) &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;偶数&quot;</span>);  </span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;奇数&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-求出1-100的和，并将结果返回"><a href="#2-求出1-100的和，并将结果返回" class="headerlink" title="2.求出1-100的和，并将结果返回"></a>2.求出1-100的和，并将结果返回</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">	System.out.println(sum100());  </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">sum100</span><span class="params">()</span> &#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">sum</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;  </span><br><span class="line">        sum = sum + i;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> sum;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-定义一个方法，给这个方法传几就循环打印几次“我是一个很有经验的JAVA开发工程师”"><a href="#3-定义一个方法，给这个方法传几就循环打印几次“我是一个很有经验的JAVA开发工程师”" class="headerlink" title="3.定义一个方法，给这个方法传几就循环打印几次“我是一个很有经验的JAVA开发工程师”"></a>3.定义一个方法，给这个方法传几就循环打印几次“我是一个很有经验的JAVA开发工程师”</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">    System.out.print(<span class="string">&quot;请输入打印次数：&quot;</span>);  </span><br><span class="line">    <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line">    print(n);  </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">print</span><span class="params">(<span class="type">int</span> a)</span> &#123;  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= a; i++) &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;我是一个很有经验的JAVA开发工程师&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-在main方法中定义一个数组，将这个数组传入一个方法中，并在此方法中遍历数组"><a href="#4-在main方法中定义一个数组，将这个数组传入一个方法中，并在此方法中遍历数组" class="headerlink" title="4.在main方法中定义一个数组，将这个数组传入一个方法中，并在此方法中遍历数组"></a>4.在main方法中定义一个数组，将这个数组传入一个方法中，并在此方法中遍历数组</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    String arr1[] = &#123;<span class="string">&quot;你好&quot;</span>,<span class="string">&quot;我好&quot;</span>,<span class="string">&quot;大家好&quot;</span>,<span class="string">&quot;hello&quot;</span>,<span class="string">&quot;good&quot;</span>&#125;;  </span><br><span class="line">    bianli(arr1);  </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">bianli</span><span class="params">(String a[])</span> &#123;  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; a.length; i++) &#123;  </span><br><span class="line">        System.out.println(a[i]);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-数组作为返回值返回"><a href="#5-数组作为返回值返回" class="headerlink" title="5.数组作为返回值返回"></a>5.数组作为返回值返回</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">   String arr1[] = shuzu();   </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> String[] shuzu() &#123;  </span><br><span class="line">    String arr1[] = &#123;<span class="string">&quot;ta好&quot;</span>,<span class="string">&quot;我好&quot;</span>,<span class="string">&quot;大家好&quot;</span>,<span class="string">&quot;hello&quot;</span>,<span class="string">&quot;good&quot;</span>&#125;;  </span><br><span class="line">    <span class="keyword">return</span> arr1;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="方法的重载"><a href="#方法的重载" class="headerlink" title="方法的重载"></a>方法的重载</h1><blockquote>
-<p>方法可以重名，但是参数不能一样<br>区分点：<br>1.参数个数不同<br>2.参数类型不同<br>3.参数顺序不同</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">sum</span> <span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;  </span><br><span class="line">    System.out.println(a+b);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">sum</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b,<span class="type">int</span> c)</span> &#123;  </span><br><span class="line">    System.out.println(a+b+c);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">sum</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b,<span class="type">int</span> c,<span class="type">int</span> d)</span> &#123;  </span><br><span class="line">    System.out.println(a+b+c+d);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h1><p>一个方法的参数的数量不确定，例：int…arr</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将多个字符串拼接到一起，并且中间使用特定的符号链接，并且在输入空字符的时候返回空字符串</span></span><br><span class="line"><span class="type">String</span> <span class="variable">zm</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;  </span><br><span class="line"><span class="keyword">if</span> (arr != <span class="literal">null</span> &amp;&amp; arr.length &gt; <span class="number">0</span>)&#123;  </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;  </span><br><span class="line">        <span class="keyword">if</span> (i == arr.length-<span class="number">1</span>)&#123;  </span><br><span class="line">            zm = zm+ arr[i];  </span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;  </span><br><span class="line">            zm = zm+ arr[i]+fh;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> zm;  </span><br><span class="line">&#125;<span class="keyword">else</span>&#123;  </span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//简单的递归计算5+4+3+2+1：</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">  </span><br><span class="line">    pqy(<span class="number">5</span>);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">pqy</span><span class="params">(<span class="type">int</span> n)</span> &#123;  </span><br><span class="line">    System.out.println(n);  </span><br><span class="line">    n--;  </span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">0</span>)&#123;  </span><br><span class="line">        <span class="keyword">return</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    pqy(n);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//计算阶乘</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">s</span> <span class="operator">=</span> pqy(<span class="number">5</span>);  </span><br><span class="line">    System.out.println(s);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">pqy</span><span class="params">(<span class="type">int</span> n)</span> &#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> n;  </span><br><span class="line">    System.out.println(n);  </span><br><span class="line">    i--;  </span><br><span class="line">    <span class="keyword">if</span> (i == <span class="number">0</span>)&#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;  </span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;  </span><br><span class="line">        n = n*pqy(i);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> n;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//还有一种简单的：</span></span><br><span class="line"><span class="comment">//    public static int pqy(int n) &#123;  </span></span><br><span class="line"><span class="comment">//        if (n == 1) &#123;  </span></span><br><span class="line"><span class="comment">//            return 1;  </span></span><br><span class="line"><span class="comment">//        &#125;  </span></span><br><span class="line"><span class="comment">//        return n*pqy(n-1);  </span></span><br><span class="line"><span class="comment">//    &#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//求斐波那契数列</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> pqy2(<span class="number">10</span>);  </span><br><span class="line">    System.out.println(m);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">pqy2</span><span class="params">(<span class="type">int</span> n)</span> &#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">2</span> || n == <span class="number">1</span>)&#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;  </span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span> (n &lt; <span class="number">1</span>)&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;请输入正数&quot;</span>);  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;  </span><br><span class="line">        a = pqy(n);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> a;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">pqy</span><span class="params">(<span class="type">int</span> n)</span> &#123;  </span><br><span class="line">    <span class="keyword">if</span> (n == <span class="number">2</span> || n == <span class="number">1</span>)&#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;  </span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;  </span><br><span class="line">        <span class="keyword">return</span> pqy(n-<span class="number">1</span>) + pqy(n-<span class="number">2</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E5%85%AB.%E5%B0%81%E8%A3%85/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E5%85%AB.%E5%B0%81%E8%A3%85/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-07-18 13:10:58" itemprop="dateModified" datetime="2024-07-18T13:10:58+08:00">2024-07-18</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E4%BA%94.%E6%95%B0%E7%BB%84/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E4%BA%94.%E6%95%B0%E7%BB%84/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-11 14:51:57" itemprop="dateModified" datetime="2024-08-11T14:51:57+08:00">2024-08-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="静态初始化"><a href="#静态初始化" class="headerlink" title="静态初始化"></a>静态初始化</h2><p><code>int[] arr1 = new int[3];</code></p>
-<h2 id="动态初始化"><a href="#动态初始化" class="headerlink" title="动态初始化"></a>动态初始化</h2><p><code>int arr3[]  = &#123;1,2,3,4,5&#125;;</code></p>
-<h2 id="数组的长度"><a href="#数组的长度" class="headerlink" title="数组的长度"></a>数组的长度</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr3[]  = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;  </span><br><span class="line">  </span><br><span class="line">System.out.println(arr1.length);</span><br></pre></td></tr></table></figure>
-
-<h2 id="数据输入"><a href="#数据输入" class="headerlink" title="数据输入"></a>数据输入</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自定义数据录入</span></span><br><span class="line"><span class="type">int</span>[] arr1 = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];<span class="comment">//基本数据类型  </span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;i &lt; arr1.length;i++)&#123;  </span><br><span class="line">    System.out.print(<span class="string">&quot;arr1[&quot;</span>+i+<span class="string">&quot;]=&quot;</span>);  </span><br><span class="line">    arr1[i] = sc.nextInt();  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;i &lt; arr1.length;i++)&#123;  </span><br><span class="line">    System.out.print(arr1[i]);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//随机数录入</span></span><br><span class="line"><span class="type">int</span>[] arr1 = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">100</span>];<span class="comment">//基本数据类型  </span></span><br><span class="line"><span class="type">Random</span> <span class="variable">rand</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;i &lt; arr1.length;i++)&#123;  </span><br><span class="line">    arr1[i] = rand.nextInt(<span class="number">100</span>)+<span class="number">1</span>;  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;i &lt; arr1.length;i++)&#123;  </span><br><span class="line">    System.out.println(i+<span class="string">&quot;.&quot;</span>+arr1[i]);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="数组遍历"><a href="#数组遍历" class="headerlink" title="数组遍历"></a>数组遍历</h2><p><code>数组名.fori</code><br>可快速进行遍历</p>
-<h2 id="数组练习"><a href="#数组练习" class="headerlink" title="数组练习"></a>数组练习</h2><blockquote>
-<p>求最大值</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr1[] = &#123;<span class="number">23</span>,<span class="number">467</span>,<span class="number">85678</span>,<span class="number">90</span>,<span class="number">261</span>&#125;;  </span><br><span class="line"><span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr1.length-<span class="number">1</span>; i++) &#123;  </span><br><span class="line">    <span class="keyword">if</span> (arr1[i] &gt; arr1[i+<span class="number">1</span>] &amp;&amp; arr1[i] &gt; max) &#123;  </span><br><span class="line">        max = arr1[i];  </span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span> (arr1[i] &lt; arr1[i+<span class="number">1</span>] &amp;&amp; arr1[i+<span class="number">1</span>] &gt; max) &#123;  </span><br><span class="line">        max = arr1[i+<span class="number">1</span>];  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println(<span class="string">&quot;最大值为&quot;</span>+max);</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>随机产生10个[0，100]之间的整数，统计既是3又是5，但不是7的倍数的个数</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Random</span> <span class="variable">rand</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();  </span><br><span class="line"><span class="type">int</span> arr1[] =  <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10</span>];  </span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr1.length; i++) &#123;  </span><br><span class="line">    arr1[i] = rand.nextInt(<span class="number">100</span>);  </span><br><span class="line">    System.out.print(arr1[i] + <span class="string">&quot;  &quot;</span>);  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println(<span class="string">&quot;\n&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> <span class="number">0</span>;  </span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr1.length; i++) &#123;  </span><br><span class="line">    <span class="keyword">if</span>(arr1[i] % <span class="number">3</span> == <span class="number">0</span> &amp;&amp; arr1[i] % <span class="number">5</span> == <span class="number">0</span> &amp;&amp; arr1[i] % <span class="number">7</span> != <span class="number">0</span>)&#123;  </span><br><span class="line">        n++;  </span><br><span class="line">        System.out.println(arr1[i]);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.println(n+<span class="string">&quot;个&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>键盘录入一个整数，找出整数在数组中存贮的索引位置</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);  </span><br><span class="line"><span class="type">Random</span> <span class="variable">rand</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();  </span><br><span class="line">  </span><br><span class="line"><span class="type">int</span> arr1[] = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10</span>];  </span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr1.length; i++) &#123;  </span><br><span class="line">    arr1[i] = rand.nextInt(<span class="number">100</span>)+<span class="number">1</span>;  </span><br><span class="line">    System.out.print(arr1[i]+<span class="string">&quot; &quot;</span>);  </span><br><span class="line">&#125;  </span><br><span class="line">System.out.print(<span class="string">&quot;请输入一个整数：&quot;</span>);  </span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();  </span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr1.length; i++) &#123;  </span><br><span class="line">    <span class="keyword">if</span> (n == arr1[i]) &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;索引为:&quot;</span>+i);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="内存图"><a href="#内存图" class="headerlink" title="内存图"></a>内存图</h2><ol>
-<li>&#x3D;&#x3D;栈&#x3D;&#x3D;（Stack）</li>
-<li>&#x3D;&#x3D;堆&#x3D;&#x3D;(Heap)</li>
-<li>&#x3D;&#x3D;方法区&#x3D;&#x3D;（Method Area）</li>
-<li>&#x3D;&#x3D;本地方法栈&#x3D;&#x3D;（Native Method Stack）：专门运行Native方法（本地方法）</li>
-<li>&#x3D;&#x3D;寄存器&#x3D;&#x3D;（了解）（pc register）</li>
-</ol>
-<h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><p><code>int arr2[][] = new int[n][m];</code><br>n代表的是一维数组在二维数组中代表的索引</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> arr2[][] = &#123;&#123;<span class="number">21</span>,<span class="number">34</span>,<span class="number">542</span>&#125;,&#123;<span class="number">56</span>,<span class="number">54</span>,<span class="number">23</span>&#125;,&#123;<span class="number">78</span>,<span class="number">65</span>,<span class="number">66</span>&#125;&#125;;  </span><br><span class="line">System.out.println(arr2[<span class="number">0</span>][<span class="number">1</span>]);<span class="comment">//34</span></span><br></pre></td></tr></table></figure>
-<p>![[Pasted image 20240713152610.png]]</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E4%BA%8C.%E5%8F%98%E9%87%8F%20%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%20%20%E8%BF%90%E7%AE%97%E7%AC%A6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E4%BA%8C.%E5%8F%98%E9%87%8F%20%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%20%20%E8%BF%90%E7%AE%97%E7%AC%A6/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-11 14:35:43" itemprop="dateModified" datetime="2024-08-11T14:35:43+08:00">2024-08-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="变量-数据类型转换-运算符"><a href="#变量-数据类型转换-运算符" class="headerlink" title="变量  数据类型转换  运算符"></a>变量  数据类型转换  运算符</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>![[Pasted image 20240708091302.png]]<br>![[Pasted image 20240708091338.png]]</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">this is java progremme</span></span><br><span class="line"><span class="comment"><span class="doctag">@author</span> THL</span></span><br><span class="line"><span class="comment"><span class="doctag">@version</span> v1.2</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test1</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">byte</span> <span class="variable">num1</span> <span class="operator">=</span>  <span class="number">100</span>;</span><br><span class="line">		System.out.println(<span class="string">&quot;num1=&quot;</span>+num1);</span><br><span class="line"></span><br><span class="line">		<span class="type">short</span> <span class="variable">num2</span> <span class="operator">=</span>  <span class="number">101</span>;</span><br><span class="line">		num2 = <span class="number">102</span>;</span><br><span class="line">		System.out.println(<span class="string">&quot;num2=&quot;</span>+num2);</span><br><span class="line"></span><br><span class="line">		<span class="type">int</span> <span class="variable">num3</span> <span class="operator">=</span> <span class="number">103</span>;</span><br><span class="line">		num3 = <span class="number">104</span>;</span><br><span class="line">		System.out.println(<span class="string">&quot;num3=&quot;</span>+num3);</span><br><span class="line"></span><br><span class="line">		<span class="comment">//定义long的后面要加L</span></span><br><span class="line">		<span class="type">long</span> <span class="variable">num4</span> <span class="operator">=</span> <span class="number">105L</span>;</span><br><span class="line">		System.out.println(<span class="string">&quot;num4=&quot;</span>+num4);</span><br><span class="line"></span><br><span class="line">		<span class="comment">//定义fault的后面要加F</span></span><br><span class="line">		<span class="type">float</span> <span class="variable">num5</span> <span class="operator">=</span> <span class="number">106.55F</span>;</span><br><span class="line">		System.out.println(<span class="string">&quot;num5=&quot;</span>+num5);</span><br><span class="line"></span><br><span class="line">		<span class="type">double</span> <span class="variable">num6</span> <span class="operator">=</span> <span class="number">107.5</span>;</span><br><span class="line">		System.out.println(<span class="string">&quot;num6=&quot;</span>+num6);</span><br><span class="line"></span><br><span class="line">		<span class="type">char</span> <span class="variable">num7</span> <span class="operator">=</span> <span class="number">108</span>;</span><br><span class="line">		System.out.println(<span class="string">&quot;num7=&quot;</span>+num7);</span><br><span class="line"></span><br><span class="line">		<span class="type">boolean</span> <span class="variable">num8</span> <span class="operator">=</span> <span class="literal">true</span>;</span><br><span class="line">		<span class="type">boolean</span> <span class="variable">num9</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line">		System.out.println(<span class="string">&quot;num8=&quot;</span>+num8);</span><br><span class="line">		System.out.println(<span class="string">&quot;num9=&quot;</span>+num9);</span><br><span class="line"></span><br><span class="line">		<span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;漫步者花再&quot;</span>;</span><br><span class="line">		System.out.println(<span class="string">&quot;name=&quot;</span>+name);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>![[Pasted image 20240708095136.png]]</p>
-<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>&#x2F;n:换行<br>&#x2F;t：tab键<br>&#x2F;&#x2F;：表示一个&#x2F;</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test1</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">String</span> <span class="variable">path</span> <span class="operator">=</span> <span class="string">&quot;E:\\OneDrive\\obsidian\\.obsidian\\snippets&quot;</span>;</span><br><span class="line">		System.out.println(path);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>![[Pasted image 20240708100822.png]]</p>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test1</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">float</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">		<span class="type">float</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="type">float</span> <span class="variable">result</span> <span class="operator">=</span> a/b;</span><br><span class="line">		System.out.println(a/b);</span><br><span class="line">		System.out.println(result);</span><br><span class="line"></span><br><span class="line">		<span class="type">double</span> <span class="variable">c</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">		<span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="type">double</span> <span class="variable">result01</span> <span class="operator">=</span> c/d;</span><br><span class="line">		System.out.println(c/d);</span><br><span class="line">		System.out.println(result01);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>![[Pasted image 20240708102700.png]]</p>
-<p>&#x3D;&#x3D;作用域&#x3D;&#x3D;–一个大括号{}是一个作用域<br>取值范围从小到大排序：</p>
-<blockquote>
-<p>定义的时候默认是int，但是如果不超过上限则无需使用强转</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test1</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">char</span> <span class="variable">a</span> <span class="operator">=</span> <span class="string">&#x27;你&#x27;</span>;</span><br><span class="line">		System.out.println(a+<span class="number">0</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>![[Pasted image 20240708114604.png]]</p>
-<p>byte,short,char -&gt; int -&gt; long -&gt; float -&gt; double<br><code>强制类型转换：float num2 = (float)num1</code></p>
-<h2 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h2><p>异或运算<br>需要转换成二进制，进行按位取反</p>
-<blockquote>
-<p>感觉没啥大用，需要用时查百度</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">36</span>
-          <span class="site-state-item-name">posts</span>
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/cofess" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
+        <h2 id="name" class="hidden-xs hidden-sm">昵称</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shenzhen, China</small>
       </div>
-  </nav>
-</div>
+      
+      <div class="search" id="search-form-wrap">
 
-
-
-      </div>
-
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2024</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
 
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
         
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">Books</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎交流与分享经验!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+
+    
+      
+
+    
+      
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a><span class="archive-list-count">36</span></li></ul>
+    </div>
+  </div>
 
 
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9716.%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.343Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9716.%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%88%9B%E5%BB%BA%E7%BA%BF%E7%A8%8B/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.341Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9715.%E5%A4%9A%E7%A7%8DAPI/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E7%B1%BB/%E5%8C%85%E8%A3%85%E7%B1%BB/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.330Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9715.%E5%A4%9A%E7%A7%8DAPI/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E7%B1%BB/System%E7%B1%BB/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.328Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9715.%E5%A4%9A%E7%A7%8DAPI/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E7%B1%BB/Arrays%E6%95%B0%E7%BB%84%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.318Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
 
+    
+  </div>
+</aside>
 
+  
+  <main class="main" role="main">
+  
+  <div class="content article-list">
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9711.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/final%E4%BF%AE%E9%A5%B0%E7%AC%A6/" class="article-date">
+	  <time datetime="2024-08-13T07:26:19.278Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
 
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9711.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/final%E4%BF%AE%E9%A5%B0%E7%AC%A6/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
 
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8B/%E5%91%BD%E4%BB%A4/" class="article-date">
+	  <time datetime="2024-08-13T07:26:19.001Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
 
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8B/%E5%91%BD%E4%BB%A4/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
 
-      </div>
-    </footer>
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8B/10.%E7%BB%A7%E6%89%BF%E5%92%8C%E6%8A%BD%E8%B1%A1/" class="article-date">
+	  <time datetime="2024-08-13T07:26:19.000Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8B/10.%E7%BB%A7%E6%89%BF%E5%92%8C%E6%8A%BD%E8%B1%A1/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E9%9B%B6.%E9%9B%B6%E6%95%A3/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.784Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E9%9B%B6.%E9%9B%B6%E6%95%A3/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E6%9D%82%E7%A2%8E%E7%9F%A5%E8%AF%86/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.784Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E6%9D%82%E7%A2%8E%E7%9F%A5%E8%AF%86/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E5%9B%9B.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.783Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E5%9B%9B.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E5%85%AD.%E6%96%B9%E6%B3%95/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.782Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E5%85%AD.%E6%96%B9%E6%B3%95/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E5%85%AB.%E5%B0%81%E8%A3%85/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.781Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E5%85%AB.%E5%B0%81%E8%A3%85/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E4%BA%94.%E6%95%B0%E7%BB%84/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.780Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E4%BA%94.%E6%95%B0%E7%BB%84/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E4%BA%8C.%E5%8F%98%E9%87%8F%20%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%20%20%E8%BF%90%E7%AE%97%E7%AC%A6/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.766Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E4%BA%8C.%E5%8F%98%E9%87%8F%20%20%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%20%20%E8%BF%90%E7%AE%97%E7%AC%A6/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+    
+    <nav class="bar bar-footer clearfix" data-stick-bottom>
+        <div class="bar-inner">
+        <ul class="pager pull-left">
+            
+            <li class="prev">
+                <a href="/page/2/">
+                    <i class="icon icon-angle-left"></i>
+                    Prev
+                </a>
+            </li>
+            
+            
+            <li class="next">
+                <a href="/page/4/">
+                    Next
+                    <i class="icon icon-angle-right"></i>
+                </a>
+            </li>
+            
+        </ul>
+            <div class="total-article bar-right">Page 3 of 4</div>
+        </div>
+    </nav>
+    
+ 
+</main>
 
-<script src="/js/utils.js"></script>
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
 
-<script src="/js/motion.js"></script>
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/application.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
 
 
 
 
-  
+
+
+   
 
 
 
@@ -1192,16 +632,6 @@
 
 
 
-
-
-
-
-
-
-
-  
-
-  
 
 </body>
 </html>

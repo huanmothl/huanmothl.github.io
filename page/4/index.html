@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 7.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>Hexo</title>
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/page/4/index.html">
@@ -27,737 +25,533 @@
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/page/4/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
-
-  <title>Hexo</title>
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://example.com/page/4/index.html">
   
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
 
 
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
       
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E4%B9%9D.%E6%95%B0%E7%BB%84%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E4%B9%9D.%E6%95%B0%E7%BB%84%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-06 15:20:12" itemprop="dateModified" datetime="2024-08-06T15:20:12+08:00">2024-08-06</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
-          <h1 id="数组常见算法"><a href="#数组常见算法" class="headerlink" title="数组常见算法"></a>数组常见算法</h1><h2 id="数组翻转"><a href="#数组翻转" class="headerlink" title="数组翻转"></a>数组翻转</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>,<span class="number">44</span>,<span class="number">55</span>,<span class="number">66</span>,<span class="number">77</span>,<span class="number">88</span>,<span class="number">99</span>,<span class="number">00</span>&#125;;  </span><br><span class="line">    arr = paixu(arr);  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;arr[&quot;</span>+i+<span class="string">&quot;]:&quot;</span>+arr[i]);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] paixu(<span class="type">int</span> arr1[]) &#123;  </span><br><span class="line">    <span class="type">int</span> min,max,temp;  </span><br><span class="line">    min = <span class="number">0</span>;  </span><br><span class="line">    max = arr1.length-<span class="number">1</span>;  </span><br><span class="line">    <span class="keyword">while</span>(min &lt; max)&#123;  </span><br><span class="line">        temp = arr1[min];  </span><br><span class="line">        arr1[min] = arr1[max];  </span><br><span class="line">        arr1[max] = temp;  </span><br><span class="line">        min++;  </span><br><span class="line">        max--;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> arr1;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p>&#x2F;&#x2F;两个两个的比，使大的永远是第二个（从小到大排序）</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">999</span>,<span class="number">44</span>,<span class="number">55</span>,<span class="number">66</span>,<span class="number">77</span>,<span class="number">88</span>,<span class="number">99</span>,<span class="number">00</span>&#125;;  </span><br><span class="line">    arr = paixu(arr);  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;arr[&quot;</span>+i+<span class="string">&quot;]:&quot;</span>+arr[i]);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] paixu(<span class="type">int</span> arr1[]) &#123;  </span><br><span class="line">    <span class="type">int</span> min,max,temp=arr1[<span class="number">0</span>];  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr1.length; i++) &#123;  </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i+<span class="number">1</span>; j &lt; arr1.length; j++) &#123;  </span><br><span class="line">            <span class="keyword">if</span>(arr1[i] &gt; arr1[j]) &#123;  </span><br><span class="line">                temp = arr1[j];  </span><br><span class="line">                arr1[j] = arr1[i];  </span><br><span class="line">                arr1[i] = temp;  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> arr1;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h2><p>&#x2F;&#x2F;只能从大小顺序已经排列好的数组中进行查找<br>![[Pasted image 20240718130345.png]]</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">999</span>,<span class="number">44</span>,<span class="number">55</span>,<span class="number">66</span>,<span class="number">77</span>,<span class="number">88</span>,<span class="number">99</span>,<span class="number">00</span>&#125;;  </span><br><span class="line">    arr = paixu(arr);<span class="comment">//按照从小到大排好顺序  </span></span><br><span class="line">  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;arr[&quot;</span>+i+<span class="string">&quot;]:&quot;</span>+arr[i]);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> erfen(arr,<span class="number">999</span>);  </span><br><span class="line">    System.out.println(<span class="string">&quot;你要找的数字的序列为：&quot;</span>+n);  </span><br><span class="line">  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] paixu(<span class="type">int</span> arr1[]) &#123;  </span><br><span class="line">    <span class="type">int</span> temp=arr1[<span class="number">0</span>];  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr1.length; i++) &#123;  </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i+<span class="number">1</span>; j &lt; arr1.length; j++) &#123;  </span><br><span class="line">            <span class="keyword">if</span>(arr1[i] &gt; arr1[j]) &#123;  </span><br><span class="line">                temp = arr1[j];  </span><br><span class="line">                arr1[j] = arr1[i];  </span><br><span class="line">                arr1[i] = temp;  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> arr1;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">erfen</span><span class="params">(<span class="type">int</span> arr2[], <span class="type">int</span> n)</span>&#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">min</span> <span class="operator">=</span> <span class="number">0</span>,max = arr2.length-<span class="number">1</span>;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> (min +max)/<span class="number">2</span>;  </span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>)&#123;  </span><br><span class="line">        <span class="keyword">if</span>(arr2[mid] &lt; n)&#123;  </span><br><span class="line">            min = mid+<span class="number">1</span>;  </span><br><span class="line">            mid = (min +max)/<span class="number">2</span>;  </span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (arr2[mid] &gt; n ) &#123;  </span><br><span class="line">            max = mid-<span class="number">1</span>;  </span><br><span class="line">            mid = (min +max)/<span class="number">2</span>;  </span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (arr2[mid] == n ) &#123;  </span><br><span class="line">            <span class="keyword">break</span>;  </span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (arr2[mid+<span class="number">1</span>] == n) &#123;  </span><br><span class="line">            mid++;  </span><br><span class="line">            <span class="keyword">break</span>;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> mid;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="对象数组"><a href="#对象数组" class="headerlink" title="对象数组"></a>对象数组</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//test类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    Person[] person = <span class="keyword">new</span> <span class="title class_">Person</span>[<span class="number">3</span>];  </span><br><span class="line">    <span class="type">Person</span> <span class="variable">p1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>(<span class="string">&quot;张三&quot;</span>,<span class="number">20</span>);  </span><br><span class="line">    <span class="type">Person</span> <span class="variable">p2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>(<span class="string">&quot;李四&quot;</span>,<span class="number">22</span>);  </span><br><span class="line">    <span class="type">Person</span> <span class="variable">p3</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>(<span class="string">&quot;王五&quot;</span>,<span class="number">23</span>);  </span><br><span class="line">  </span><br><span class="line">    person[<span class="number">0</span>] = p1;  </span><br><span class="line">    person[<span class="number">1</span>] = p2;  </span><br><span class="line">    person[<span class="number">2</span>] = p3;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; person.length; i++) &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;name:&quot;</span>+person[i].getName()+<span class="string">&quot; &quot;</span>+<span class="string">&quot;age:&quot;</span>+person[i].getAge());  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Person类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Person</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span> String name;  </span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Person</span><span class="params">()</span> &#123;  </span><br><span class="line">  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Person</span><span class="params">(String name, <span class="type">int</span> age)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.name = name;  </span><br><span class="line">        <span class="built_in">this</span>.age = age;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> age;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.age = age;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> name;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.name = name;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="方法参数"><a href="#方法参数" class="headerlink" title="方法参数"></a>方法参数</h2><h3 id="基本数据类型和引用数据类型"><a href="#基本数据类型和引用数据类型" class="headerlink" title="基本数据类型和引用数据类型"></a>基本数据类型和引用数据类型</h3><p>1.基本数据类型<br>![[Pasted image 20240708091302.png]]<br>基本数据类型调用方法类时传的是参数<br>2.引用数据类型<br>引用数据类型调用方法时传的是地址</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//例:</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">int</span> arr[] = &#123;<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>&#125;;  </span><br><span class="line">    mothed(arr);  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;  </span><br><span class="line">        System.out.println(arr[i]);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">mothed</span><span class="params">(<span class="type">int</span>[] arr1)</span> &#123;  </span><br><span class="line">    arr1[<span class="number">0</span>]+=<span class="number">10</span>;  </span><br><span class="line">    arr1[<span class="number">1</span>]+=<span class="number">10</span>;  </span><br><span class="line">    arr1[<span class="number">2</span>]+=<span class="number">10</span>;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="命令行参数"><a href="#命令行参数" class="headerlink" title="命令行参数"></a>命令行参数</h2><p>在idea中使用命令行给main传参：<br>![[Pasted image 20240718193521.png]]</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;i &lt; args.length;i++) &#123;  </span><br><span class="line">        System.out.println(args[i]);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="快速生成方法"><a href="#快速生成方法" class="headerlink" title="快速生成方法"></a>快速生成方法</h2><p>1.先调用方法可再使用alt+回车创建，这个方法<br>2.先选中一段代码，再按ctrl+alt+m可快速将一段代码抽取到一个方法中。</p>
-<h2 id="debug模式"><a href="#debug模式" class="headerlink" title="debug模式"></a>debug模式</h2><p>![[Pasted image 20240718195636.png]]<br>![[Pasted image 20240718200136.png]]</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E4%B8%89.idea/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E4%B8%89.idea/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-07-11 15:46:33" itemprop="dateModified" datetime="2024-07-11T15:46:33+08:00">2024-07-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E4%B8%83.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E4%B8%83.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-11 14:53:47" itemprop="dateModified" datetime="2024-08-11T14:53:47+08:00">2024-08-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><blockquote>
-<p>&#x3D;&#x3D;三大特征：封装，继承，多态&#x3D;&#x3D;<br>1.面向过程，c语言<br>2.面向对象，java</p>
-</blockquote>
-<h2 id="1-类和对象"><a href="#1-类和对象" class="headerlink" title="1.类和对象"></a>1.类和对象</h2><p>如果调用的对象带static关键字则不需要new，直接类名.即可</p>
-<h3 id="1-类"><a href="#1-类" class="headerlink" title="1.类"></a>1.类</h3><p>1.测试类：带main的<br>2.实体类<br>实体类组成部分：<br>1.属性<br>    定义位置：类中方法外<br>    作用范围：作用于当前类<br>    定义格式：<br>    默认值：<br>2.行为<br>例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//描述人类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">person</span> &#123;  </span><br><span class="line">    String name;  </span><br><span class="line">    <span class="type">int</span> age;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;人要吃饭&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sleep</span><span class="params">()</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;人要睡觉&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//描述动物类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">animal</span> &#123;  </span><br><span class="line">    String kind;  </span><br><span class="line">    String color;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;动物要吃饭&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sleep</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;动物要睡觉&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//描述手机类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">phone</span> &#123;  </span><br><span class="line">    <span class="comment">//属性  </span></span><br><span class="line">    String brand;  </span><br><span class="line">    String color;  </span><br><span class="line">    <span class="type">int</span> price;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">call</span><span class="params">(String name)</span>&#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;给&quot;</span>+name+<span class="string">&quot;打电话&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">message</span><span class="params">()</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;给金莲发短信&quot;</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="2-对象"><a href="#2-对象" class="headerlink" title="2.对象"></a>2.对象</h3><p>1.导包<br>    - 使用在同一个包里面的类不需要导包<br>    - 使用在不同包里面的类需要导包<br>    - &#x3D;&#x3D;特殊&#x3D;&#x3D;：Java.long包，该包下的类不需要导包即可使用例如：String<br>2.创建对象<br>    - 用哪个类的成员就new他的对象<br>    类名   对象名  &#x3D;  new  类名（）  -&gt;  例如：Person p &#x3D; new person();<br>3.调用成员<br>    - 想用哪个类的对象就去点哪个成员的对象名</p>
-<p>例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//调用:</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">        <span class="type">person</span> <span class="variable">per</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">person</span>();  </span><br><span class="line">        per.name = <span class="string">&quot;谭琎&quot;</span>;  </span><br><span class="line">        per.age = <span class="number">20</span>;  </span><br><span class="line">  </span><br><span class="line">        per.eat();  </span><br><span class="line">        per.sleep();  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="匿名对象"><a href="#匿名对象" class="headerlink" title="匿名对象"></a>匿名对象</h2><p>只想单纯的调用一个类里面的方法时，<br>可以不进行赋值，直接进行调用</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new person().eat();</span><br></pre></td></tr></table></figure>
-<p>![[Pasted image 20240714210428.png]]</p>
-<h2 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">定义一个类MyDate，属性有year  mounth  day</span><br><span class="line">再定义一个类Citizen(公民类),属性有name(String类型)  birthday(MyDate类型)  idCard(String),为这三个属性赋值，然后将值取出来</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//MyDate类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyDate</span> &#123;  </span><br><span class="line">    <span class="type">int</span> year;  </span><br><span class="line">    <span class="type">int</span> month;  </span><br><span class="line">    <span class="type">int</span> day;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Citizen类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Citizen</span> &#123;  </span><br><span class="line">    String name;  </span><br><span class="line">    <span class="type">MyDate</span> <span class="variable">birthday</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyDate</span>();  </span><br><span class="line">    String idCard;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">Citizen</span> <span class="variable">tplk</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Citizen</span>();  </span><br><span class="line">    tplk.name = <span class="string">&quot;tl&quot;</span>;  </span><br><span class="line">    tplk.birthday.year = <span class="number">2000</span>;  </span><br><span class="line">    tplk.birthday.month = <span class="number">1</span>;  </span><br><span class="line">    tplk.birthday.day = <span class="number">1</span>;  </span><br><span class="line">    tplk.idCard = <span class="string">&quot;qwerty&quot;</span>;  </span><br><span class="line">  </span><br><span class="line">    System.out.println(tplk.name);  </span><br><span class="line">    System.out.println(tplk.birthday.year);  </span><br><span class="line">    System.out.println(tplk.birthday.month);  </span><br><span class="line">    System.out.println(tplk.birthday.day);  </span><br><span class="line">    System.out.println(tplk.idCard);  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h2><p>将实体类中的变量使用private修饰，不让外界随便改变<br>写用数据和调用方法时，通过实体类中的方法调用实现</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//Person类</span></span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Person</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span> String name;  </span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.name = name;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span> &#123;  </span><br><span class="line">        <span class="keyword">if</span> (age&lt;<span class="number">0</span> || age&gt;<span class="number">150</span>) &#123;  </span><br><span class="line">            System.out.println(<span class="string">&quot;年龄输入错误请重新输入&quot;</span>);  </span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;  </span><br><span class="line">            <span class="built_in">this</span>.age = age;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> name;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> age;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">        <span class="type">Person</span> <span class="variable">ps</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>();  </span><br><span class="line">        ps.setName(<span class="string">&quot;大便跑&quot;</span>);  </span><br><span class="line">        ps.setAge(-<span class="number">18</span>);  </span><br><span class="line">  </span><br><span class="line">        <span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> ps.getName();  </span><br><span class="line">        <span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> ps.getAge();  </span><br><span class="line">  </span><br><span class="line">        System.out.println(<span class="string">&quot;name:&quot;</span>+name+<span class="string">&quot;,age:&quot;</span>+age);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><p>this代表当前对象：哪个对象调用了this所在的方法就代表了哪个this的对象</p>
-<h2 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h2><p>方法名和类名一致并且能初始化对象的方法</p>
-<ol>
-<li>无参构造：没有参数</li>
-<li>有参构造：有参数，参数是为指定的属性赋值</li>
-<li>满参构造：给所有属性赋值</li>
-</ol>
-<h3 id="空参构造"><a href="#空参构造" class="headerlink" title="空参构造"></a>空参构造</h3><p>public<br>new一下就是在调用构造方法</p>
-<h3 id="有参构造"><a href="#有参构造" class="headerlink" title="有参构造"></a>有参构造</h3><p>在构造的时候就传入对象。<br>其实就是在创造实体类的时候直接在括号里面进行赋值初始化，不必再调用setName和setAge进行赋值</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//person类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">person</span> &#123;  </span><br><span class="line">    <span class="keyword">private</span> String name;  </span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">person</span><span class="params">()</span> &#123;  </span><br><span class="line">        System.out.println(<span class="string">&quot;你调用了无参构造&quot;</span>);  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">person</span><span class="params">(String name, <span class="type">int</span> age)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.name = name;  </span><br><span class="line">        <span class="built_in">this</span>.age = age;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> name;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.name = name;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span> &#123;  </span><br><span class="line">        <span class="keyword">return</span> age;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span> &#123;  </span><br><span class="line">        <span class="built_in">this</span>.age = age;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//test类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="type">person</span> <span class="variable">person</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">person</span>();  </span><br><span class="line">    <span class="type">person</span> <span class="variable">person1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">person</span>(<span class="string">&quot;小白&quot;</span>,<span class="number">20</span>);  </span><br><span class="line">  </span><br><span class="line">    System.out.println(<span class="string">&quot;person-age:&quot;</span>+person.getAge());  </span><br><span class="line">    System.out.println(<span class="string">&quot;person-name:&quot;</span>+person.getName());  </span><br><span class="line">  </span><br><span class="line">    System.out.println(<span class="string">&quot;person1-age:&quot;</span>+person1.getAge());  </span><br><span class="line">    System.out.println(<span class="string">&quot;person1-name:&quot;</span>+person1.getName());  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="JavaBean"><a href="#JavaBean" class="headerlink" title="JavaBean"></a>JavaBean</h3><p>JavaBean命名规范：<br>![[Pasted image 20240716143622.png]]</p>
-<h4 id="idea快捷键"><a href="#idea快捷键" class="headerlink" title="idea快捷键"></a>idea快捷键</h4><p>原：ALT+INS<br>改后：ALT+“+”<br>可以呼出生成菜单，选择构造，进行构造。<br>可以选择构造有参&#x2F;无参对象</p>
-<h2 id="static"><a href="#static" class="headerlink" title="static"></a>static</h2><p>static静态修饰符<br>static属于类，不属于对象（比对象优先级高）</p>
-<p>在一个工具类中，他的构造方法使用private修饰，这样可以使该类不能被new，因为工具类中的方法都是static的，所以不会影响方法的使用，<br>例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">    <span class="comment">//arrutils er = new arrutils()  </span></span><br><span class="line">    <span class="type">int</span> arr1[] = &#123;<span class="number">1</span>,<span class="number">56</span>,<span class="number">21</span>,<span class="number">457</span>,<span class="number">86</span>,<span class="number">90</span>,<span class="number">43</span>&#125;;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> arrutils.arrmax(arr1);  </span><br><span class="line">    System.out.println(max);  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方法类</span></span><br><span class="line"><span class="keyword">private</span> <span class="title function_">arrutils</span><span class="params">()</span>&#123;&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">arrmax</span><span class="params">(<span class="type">int</span> arr[])</span>&#123;  </span><br><span class="line">    <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> arr[<span class="number">0</span>];  </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;arr.length;i++)&#123;  </span><br><span class="line">        <span class="keyword">if</span>(arr[i]&gt;max)&#123;  </span><br><span class="line">            max = arr[i];  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">return</span> max;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>可以试一下，当把private arrutils(){}注销掉之后，测试类中就能够new对象了</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/java%E4%B8%8A/%E4%B8%80.%E5%BC%80%E5%A7%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/java%E4%B8%8A/%E4%B8%80.%E5%BC%80%E5%A7%8B/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-08-13 15:26:18" itemprop="dateCreated datePublished" datetime="2024-08-13T15:26:18+08:00">2024-08-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-11 21:02:48" itemprop="dateModified" datetime="2024-08-11T21:02:48+08:00">2024-08-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h1><h2 id="1-jvm"><a href="#1-jvm" class="headerlink" title="1.jvm"></a>1.jvm</h2><p>java的环境</p>
-<h2 id="2-JDK-JRE"><a href="#2-JDK-JRE" class="headerlink" title="2.JDK,JRE"></a>2.JDK,JRE</h2><p>jkd（java development kit）-java的开发工具包<br>jre（java runtime environment）-java运行环境，包含了jvm以及后面开发用到的核心技术<br>jdk包含jre，jre包含jvm</p>
-<h3 id="1-JDK下载"><a href="#1-JDK下载" class="headerlink" title="1.JDK下载"></a>1.JDK下载</h3><p><a target="_blank" rel="noopener" href="http://www.oracle.com/">www.oracle.com</a><br>![[<a target="_blank" rel="noopener" href="https://obs-ae4e.obs.cn-south-1.myhuaweicloud.com/java/1/Pasted%20image%2020240707233425.png]]">https://obs-ae4e.obs.cn-south-1.myhuaweicloud.com/java/1/Pasted%20image%2020240707233425.png]]</a><br>![[Pasted image 20240707233425.png]]</p>
-<h3 id="2-环境变量"><a href="#2-环境变量" class="headerlink" title="2.环境变量"></a>2.环境变量</h3><p>![[Pasted image 20240708073629.png]]</p>
-<h1 id="编写"><a href="#编写" class="headerlink" title="编写"></a>编写</h1><h2 id="1-开始"><a href="#1-开始" class="headerlink" title="1.开始"></a>1.开始</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//一条注释</span><br><span class="line">public class test1&#123;</span><br><span class="line">	/*</span><br><span class="line">	多行注释</span><br><span class="line">	*/</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">	/**</span><br><span class="line">	文档注释，阐明文档主要功能</span><br><span class="line">	*/</span><br><span class="line">		System.out.println(&quot;HelloWorld&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class test&#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		System.out.println(&quot;HelloWorld&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">//类的名字不是文件名</span><br><span class="line">//这样编译出来的class文件名叫做test</span><br><span class="line">//main只能在public中</span><br></pre></td></tr></table></figure>
-
-<p>![[Pasted image 20240708082457.png]]</p>
-<ol>
-<li>编译生成class文件</li>
-<li>运行class文件</li>
-</ol>
-<h2 id="2-转换帮助文档"><a href="#2-转换帮助文档" class="headerlink" title="2.转换帮助文档"></a>2.转换帮助文档</h2><blockquote>
-<p>感觉没啥用<br>回车之后可以去api文件夹中的index.html文件中双击打开</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javadoc -d api -author -version test1.java</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h2><p>![[Pasted image 20240708084040.png]]<br>常见的编码规则：<br>GBK：中文编码<br>    ANSI代表的是GBK<br>UTF-8：</p>
-<h2 id="4-println与print"><a href="#4-println与print" class="headerlink" title="4.println与print"></a>4.println与print</h2><p>println自带换行，print不带换行</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/test01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/test01/" class="post-title-link" itemprop="url">test01</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2024-08-13 14:12:03 / Modified: 15:07:30" itemprop="dateCreated datePublished" datetime="2024-08-13T14:12:03+08:00">2024-08-13</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="111"><a href="#111" class="headerlink" title="111"></a>111</h3><h1 id="2"><a href="#2" class="headerlink" title="2"></a>2</h1>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/08/13/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/13/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2024-08-13 14:03:56 / Modified: 14:01:21" itemprop="dateCreated datePublished" datetime="2024-08-13T14:03:56+08:00">2024-08-13</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
-  </nav>
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">36</span>
-          <span class="site-state-item-name">posts</span>
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/cofess" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
+        <h2 id="name" class="hidden-xs hidden-sm">昵称</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shenzhen, China</small>
       </div>
-  </nav>
-</div>
+      
+      <div class="search" id="search-form-wrap">
 
-
-
-      </div>
-
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2024</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
 
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
         
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">Books</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎交流与分享经验!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+
+    
+      
+
+    
+      
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/08/">August 2024</a><span class="archive-list-count">36</span></li></ul>
+    </div>
+  </div>
 
 
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9716.%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.343Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9716.%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%88%9B%E5%BB%BA%E7%BA%BF%E7%A8%8B/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.341Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9715.%E5%A4%9A%E7%A7%8DAPI/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E7%B1%BB/%E5%8C%85%E8%A3%85%E7%B1%BB/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.330Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9715.%E5%A4%9A%E7%A7%8DAPI/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E7%B1%BB/System%E7%B1%BB/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.328Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2024/08/13/java%E4%B8%8B/%E6%A8%A1%E5%9D%9715.%E5%A4%9A%E7%A7%8DAPI/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3%E7%B1%BB/Arrays%E6%95%B0%E7%BB%84%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2024-08-13T07:26:19.318Z" itemprop="datePublished">2024-08-13</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
 
+    
+  </div>
+</aside>
 
+  
+  <main class="main" role="main">
+  
+  <div class="content article-list">
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E4%B9%9D.%E6%95%B0%E7%BB%84%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.468Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
 
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E4%B9%9D.%E6%95%B0%E7%BB%84%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
 
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E4%B8%89.idea/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.467Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
 
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E4%B8%89.idea/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
 
-      </div>
-    </footer>
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E4%B8%83.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.466Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E4%B8%83.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/java%E4%B8%8A/%E4%B8%80.%E5%BC%80%E5%A7%8B/" class="article-date">
+	  <time datetime="2024-08-13T07:26:18.465Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/java%E4%B8%8A/%E4%B8%80.%E5%BC%80%E5%A7%8B/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/08/13/test01/">test01</a>
+    </h1>
+  
+
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/test01/" class="article-date">
+	  <time datetime="2024-08-13T06:12:03.000Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/test01/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
+      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-header">
+    
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/08/13/hello-world/">Hello World</a>
+    </h1>
+  
+
+  </div>
+  
+  <p class="article-meta">
+    <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2024/08/13/hello-world/" class="article-date">
+	  <time datetime="2024-08-13T06:03:56.848Z" itemprop="datePublished">Aug 13</time>
+	</a>
+</span>
+    
+    
+
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2024/08/13/hello-world/#comments" class="article-comment-link">Comments</a></span>
+    
+  </p>
+</article>
+
+    
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+    
+    <nav class="bar bar-footer clearfix" data-stick-bottom>
+        <div class="bar-inner">
+        <ul class="pager pull-left">
+            
+            <li class="prev">
+                <a href="/page/3/">
+                    <i class="icon icon-angle-left"></i>
+                    Prev
+                </a>
+            </li>
+            
+            
+            <li class="next disabled">
+                <a href="javascript:;">
+                    Next
+                    <i class="icon icon-angle-right"></i>                    
+                </a>
+            </li>
+            
+        </ul>
+            <div class="total-article bar-right">Page 4 of 4</div>
+        </div>
+    </nav>
+    
+ 
+</main>
 
-<script src="/js/utils.js"></script>
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
 
-<script src="/js/motion.js"></script>
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/application.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
 
 
 
 
-  
+
+
+   
 
 
 
@@ -766,16 +560,6 @@
 
 
 
-
-
-
-
-
-
-
-  
-
-  
 
 </body>
 </html>
